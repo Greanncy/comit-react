@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"></link>
+    <style>
+        * {
+            font-family: monospace;
+        }
+        header h2 {
+            font-size: 30px;
+        }
+        body {
+            background-color: papayawhip;
+        }
+        .first-container {
+            margin: 5px;
+        }
+        .second-container {
+            margin: 5px;
+        }
+        .third-container {
+            margin: 5px;
+        }
+        .send-button {
+            margin: 10px;
+        }
+    </style>
+    <title>Contacts</title>
+</head>
+<header class="top-container2">
+    <img src="/Users/greanncyramales/Code/comit-react/lessons/16-css-site/myface/UNADJUSTEDNONRAW_thumb_2e.jpg"
+        width="150" height="150">
+    <h2>Greanncy's Portfolio</h2>
+    <nav>
+        <a href="index.html" Home> Home</a> |
+        <a href="about.html" About> About</a> |
+        <a href="contacts.html" Contacts> Contacts</a> |
+    </nav>
+</header>
+<hr>
+<body>
+    <header>
+        <h1>Contacts</h1>
+    </header>
+    <main>
+        <form action="contact-success.html" method="GET">
+            <div class="first-container">
+                <label>Name:</label>
+                <input type="name" placeholder="Name" name="subject" required>
+            </div>
+            <div class="second-container">
+                <label>Email:</label>
+                <input type="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="third-container">
+                <label>Message:</label>
+            </div>
+            <textarea name="body" placeholder="Write a message here"></textarea required>
+            <div class="send-button">
+                <button>Send!!!</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
