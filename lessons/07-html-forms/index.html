@@ -1,18 +1,44 @@
 <html>
-
 <head>
     <title>Create User</title>
 </head>
-<h1>Create User</h1>
-<hr>
-
 <body>
+    <h1>Create User</h1>
+    <hr>
     <form action="create-user.html" method="get">
-        <label>E-mail:</label>
-        <input name="e-mail" placeholder="e-mail" required />
-        <br>
-        <label>Username:</label>
-        <input name="username" placeholder="username" required /> 
-        
-</body> 
+        <div>
+            <label>E-mail:</label>
+            <input name="email" placeholder="email" required>
+        </div>
+        <div>
+            <label>Username:</label>
+            <input name="username" placeholder="username" size="30" maxlength="12">
+        </div>
+        <div>
+            <label>Password:</label>
+            <input name="password" size="30" maxlengh="8" placeholder="password" required>
+        </div>
+        <label>Bio:</label>
+        <div>
+            <textarea name="bio" placeholder="give a brief description of this user"></textarea>
+        </div>
+        <input type="hidden" name="userid" value="2300">
+        <fieldset>
+            <legend>Interest</legend>
+            Select your favourite superhero
+            <input type="radio" name="superhero" value="Superman"> Superman
+            <input type="radio" name="superhero" value="Batman"> Batman
+            <input type="radio" name="superhero" value="Wonder Woman" checked> Wonder Woman
+            <input type="radio" name="superhero" value="Flash"> Flash
+            <input type="radio" name="superhero" value="Thor"> Thor
+            <input type="radio" name="superhero" value="Hulk"> Hulk
+            Select your favorite video game
+            <input type="checkbox" name="videogame" value="Fifa" checked> Fifa
+            <input type="checkbox" name="videogame" value="NHL"> NHL
+            <input type="checkbox" name="videogame" value="Resident Evil"> Resident Evil
+            <input type="checkbox" name="videogame" value="Uncharted" checked> Uncharted
+        </fieldset>
+        <button>Create User</button>
+    </form>
+</body>
 </html>
